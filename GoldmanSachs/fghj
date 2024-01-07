@@ -1,0 +1,49 @@
+//{ Driver Code Starts
+#include<bits/stdc++.h> 
+using namespace std; 
+
+// } Driver Code Ends
+class Solution{   
+public:
+    string printMinNumberForPattern(string s){
+        // code here 
+        int Is = 0, Ds = 0;
+        int n=s.size();
+        string ans s;
+        vector <int> v;
+        
+        for(int i =0;i<n; i++) {
+            if(s[i]=='I')
+            Is++;
+        }
+        Ds=n-Is;
+        inh high =n+1;
+        
+            // For Input: 
+            // IDD
+            // Your Code's output is: 
+            // 3421
+            // It's Correct output is: 
+            // 1432
+            // Output Difference
+            // 34211432  DDIIDDDD     -1,-2,-3,0,5,4,3,2,1
+    }
+};
+
+
+//{ Driver Code Starts.
+int main() 
+{ 
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        string S;
+        cin >> S;
+        Solution ob;
+        cout << ob.printMinNumberForPattern(S) << endl;
+    }
+    return 0; 
+} 
+
+// } Driver Code Ends

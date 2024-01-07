@@ -1,0 +1,25 @@
+//medium
+
+class DataStream {
+public:
+    int val, k;
+    int m=0;
+    stack<int>s;
+    DataStream(int value, int k) {
+        val=value;
+        this->k=k;
+    }
+    
+    bool consec(int num) {
+        if(num==val) m++;
+        else m=0;
+        if(m<k) return false;
+        return true;
+    }
+};
+
+/**
+ * Your DataStream object will be instantiated and called as such:
+ * DataStream* obj = new DataStream(value, k);
+ * bool param_1 = obj->consec(num);
+ */
